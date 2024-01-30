@@ -15,8 +15,8 @@ server.js file env has been set *app.listen(process.env.PORT);* that are pass vi
 `docker build -t nasirnjs/nodejs:0.1 .`\
 
 **Steps 2:** Run build image via ENV values
-`docker run -p 8080:8000 -e PORT=8000 nasirnjs/nodejs:0.1`\
+`docker run -p 8080:8000 -e PORT=8000 rezabaiust/nodejs:0.1`\
 or
-`docker run -p 8080:8000 --env-file .env nasirnjs/nodejs:0.1`
+`docker run -p 8080:8000 --env-file .env rezabaiust/nodejs:0.1`
 
 Now Browse `http://localhost:8080/`
